@@ -1,0 +1,13 @@
+langchain
+langchain_core
+duckduckgo-search
+langchain-google-genai
+dotenv
+pypdf
+python-dotenv
+langchain-pymupdf4llm
+faiss-cpu
+torch
+transformers
+sentence-transformers
+chromadb
