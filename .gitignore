@@ -6,3 +6,8 @@ venv/
 .idea/
 .vscode/
 *.log
+
+# Angular dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.angular/
