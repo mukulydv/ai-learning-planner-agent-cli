@@ -28,7 +28,7 @@ from planner import format_schedule_markdown, generate_schedule
 from schemas import LearningPlan, PlanReview, TimeAllocation
 from .state import PlannerState
 
-LLM_MODEL = "gemini-2.5-flash"
+LLM_MODEL = "gemini-3.1-flash-lite"
 MAX_STRUCTURED_OUTPUT_ATTEMPTS = 3
 MAX_AUTO_REVISIONS = 1
 

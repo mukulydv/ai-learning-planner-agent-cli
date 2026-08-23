@@ -36,8 +36,9 @@ from pydantic import BaseModel
 from planner import format_schedule_markdown, generate_schedule
 from schemas import LearningPlan, MicroTask, Milestone, TimeAllocation
 
-SIMULATE = os.environ.get("SIMULATE") == "1" or not os.environ.get("GEMINI_API_KEY")
-
+# SIMULATE = os.environ.get("SIMULATE") == "1" or not os.environ.get("GEMINI_API_KEY")
+SIMULATE = False
+print(f"Running in {'SIMULATION' if SIMULATE else 'REAL'} mode")
 app = FastAPI(title="AI Learning Planner — Multi-Agent Orchestrator API")
 app.add_middleware(
     CORSMiddleware,
